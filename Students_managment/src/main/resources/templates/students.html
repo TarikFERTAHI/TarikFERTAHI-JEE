@@ -20,7 +20,7 @@
                 <label>Key Word</label>
                 <input type="text" name="keyword" th:value="${keyword}">
                 <button type="submit" class="btn btn-primary"><span class="bi-search"></span> Search</button>
-                <a sec:authorize="hasRole('ADMIN')" class="btn btn-primary px-3" th:href="@{/admin/formStudents}">
+                <a sec:authorize="hasAuthority('ADMIN')" class="btn btn-primary px-3" th:href="@{/admin/formStudents}">
                     <span class="bi bi-person-plus"> Add</span>
                 </a>
             </form>
@@ -34,7 +34,7 @@
                     <th>BirthDay</th>
                     <th>Genre</th>
                     <th>EnRegle</th>
-                    <th sec:authorize="hasRole('ADMIN')">Action</th>
+                    <th sec:authorize="hasAuthority('ADMIN')">Action</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -46,7 +46,7 @@
                     <td th:text="${e.dateNaissance}"></td>
                     <td th:text="${e.genre}"></td>
                     <td th:text="${e.enRegle}"></td>
-                    <td sec:authorize="hasRole('ADMIN')">
+                    <td sec:authorize="hasAuthority('ADMIN')">
                         <a class="btn btn-success px-3" th:href="@{/admin/editStudent(id=${e.id}, keyword=${keyword}, page=${currentPage})}" >
                             <i class="bi-pencil-square"></i>
                         </a>
