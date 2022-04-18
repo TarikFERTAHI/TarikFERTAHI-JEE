@@ -19,14 +19,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private DataSource dataSource;
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-       /* PasswordEncoder passwordEncoder = passwordEncoder();
-        String encodedPWD = passwordEncoder.encode("1234");
-        System.out.println(encodedPWD);
-        auth.inMemoryAuthentication()
-                .withUser("user1").password(encodedPWD).roles("USER");
-        auth.inMemoryAuthentication()
-                .withUser("admin").password(passwordEncoder.encode("admin")).roles("USER", "ADMIN");
-*/
         PasswordEncoder passwordEncoder = passwordEncoder();
         auth.jdbcAuthentication()
                 .dataSource(dataSource)
