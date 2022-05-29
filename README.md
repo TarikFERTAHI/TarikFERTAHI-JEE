@@ -1,4 +1,4 @@
-# TarikFERTAHI-JEE
+# Liste des TPs du module Architecture JEE et Middlewares
 <table>
   <tbody><tr>
     <th>Numéro</th>
