@@ -8,16 +8,7 @@
            Spring Security (Stateless &amp;&amp; Stateful)
            
 |You'll find a brief repport on each activity under each.
-</code></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="     Inversion of control &amp; injection of dependencies
-     JEE &amp; achitecture
-     Framework SPRING
-           Spring Data Jpa
-           Spring MVC 
-           DTO &amp;&amp; Mappers 
-           Spring Security (Stateless &amp;&amp; Stateful)
-        
-|You'll find a brief repport on each activity under each." tabindex="0" role="button" style="display: none;">
+</code>
 </div>
 <table>
   <tbody><tr>
